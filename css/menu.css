@@ -154,7 +154,7 @@ a.logo::after {
 		height: 25px;
 		font : normal 12px/25px "WeblySleekUI-Light", Arial, sans-serif;
 		text-align: center;
-		background-color: color: rgba(0, 0, 0, 1);
+		background-color: rgba(0, 0, 0, 1);
 		border: 1px solid rgba(255, 255, 255, 1);
 		transition: all 0.25s ease;
 	}
