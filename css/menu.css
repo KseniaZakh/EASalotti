@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+div.fixed_menu {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 20px;
+	background-color: rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
+	z-index: 15;
+}
+
+div.fixed_wrap {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+div.fixed_wrap > ul {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 30px;
+	right: 30px;
+	overflow: hidden;
+}
+
+div.fixed_wrap > ul:hover,
+ div.phone_gadg {
+	cursor: pointer;
+}
+
+div.fixed_wrap > ul > li {
+	background-color: rgba(255, 255, 255, 1);
+	position: inherit;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	z-index: inherit;
+	border-radius: 2px;
+	transition : all 0.25s;
+}
+
+div.fixed_wrap > ul > li:first-child,
+div.fixed_wrap > ul > li:nth-child(2) {
+	top: 13px;
+	transform: rotate(0);
+}
+
+div.fixed_wrap > ul > li:nth-child(3) {
+	top: 0;
+}
+
+div.fixed_wrap > ul > li:last-child {
+	bottom: 0;
+}
+
+div.search_gadg {
+	position: absolute;
+	width: 45px;
+	height: 35px;
+	left: 0;
+	background-image: url("../img/search_big.svg?31032018");
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+	cursor: pointer;
+}
+
+div.phone_gadg {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 60px;
+	background-image: url("../img/phone_big.svg?31032018");
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+}
+
+div.phone_gadg > a {
+	height: 100%;
+}
+
+nav {
+	position: absolute;
+	z-index: 5;
+	color: rgba(255, 255, 255, 1);
+}
+
+ul.menu > li > a:hover {
+	background-color: rgba(149, 43, 68, 1);
+}
+
+a.logo {
+	position: absolute;
+	z-index: 7;
+	background-image : url("../img/logo.png");
+	background-position : 0% 0%;
+	background-repeat : no-repeat;
+	background-size : contain;
+}
+
+a.logo::after {
+	display : block;
+	position : absolute;
+	bottom : 0;
+	z-index : 17;
+	content : "Everything about sofa";
+	color: rgba(255, 255, 255, 1);
+	white-space: nowrap;
+}
+
+@media only screen and (min-width: 960px) {
+
+	div.field > form {
+		display: flex;
+	}
+
+	div.field > form > input {
+		width: 225px;
+		color: rgba(0, 0, 0, 1);
+		font : normal 12px/25px "WeblySleekUI-Light", Arial, sans-serif;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	div.field > form > button {
+		width: 40px;
+		height: 25px;
+		background-color: rgba(255, 255, 255, 1);
+		background-image: url("../img/search.svg?31032018");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		cursor: pointer;
+	}
+
+	div.field > span,
+	a.fixed_number {
+		font : normal 16px/25px "WeblySleekUI-Light", Arial, sans-serif;
+		padding: 0 20px 0 25px;
+	}
+
+	a.fixed_number {
+		display: inline-block;
+		background-image: url("../img/phone.svg?31032018");
+		background-repeat: no-repeat;
+		background-position: 0 center;
+	}
+
+	a.fixed_button {
+		display: inline-block;
+		width: 150px;
+		height: 25px;
+		font : normal 12px/25px "WeblySleekUI-Light", Arial, sans-serif;
+		text-align: center;
+		background-color: color: rgba(0, 0, 0, 1);
+		border: 1px solid rgba(255, 255, 255, 1);
+		transition: all 0.25s ease;
+	}
+
+	a.fixed_button:hover {
+		color: rgba(0, 0, 0, 1);
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	nav {
+		width: 100%;
+		top: 200px;
+		left: 0;
+		background-color: rgba(103, 24, 43, 1);
+	}
+
+	ul.menu {
+		max-width: 1140px;
+		padding: 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	ul.menu > li > a {
+		width: 100%;
+		height: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	div.fixed_wrap > ul,
+	div.phone_gadg,
+	div.search_gadg,
+	div.fixed_wrap > form {
+			display: none;
+		}
+
+		a.logo {
+			width: 207px;
+			height: 80px;
+			top: 90px;
+			left: calc(50% - 103px);
+		}
+
+		a.logo::after {
+			display : block;
+			position : absolute;
+			bottom : 0;
+			left : 10px;
+			z-index : 17;
+			content : "Everything about sofa";
+			font : normal 21px/22px "WeblySleekUI-Light", Arial, sans-serif;
+			color : rgba(255, 255, 255, 1);
+			white-space : nowrap;
+	}
+}
+
+@media only screen and (min-width: 1141px) {
+		ul.menu > li > a {
+			font: normal 20px/50px "WeblySleekUI-Light", Arial, sans-serif;
+		}
+}
+
+@media (min-width: 961px) and (max-width: 1140px) {
+	ul.menu > li > a {
+		font: normal 17px/50px "WeblySleekUI-Light", Arial, sans-serif;
+	}
+}
+
+@media (max-width: 960px) {
+
+	div.fixed_menu {
+		height: 60px;
+	}
+
+	div.fixed_wrap > ul.opened > li:first-child {
+		transform: rotate(45deg);
+	}
+
+	div.fixed_wrap > ul.opened > li:nth-child(2) {
+		transform: rotate(-45deg);
+	}
+
+	div.fixed_wrap > ul.opened > li:nth-child(3) {
+		top: -10px;
+	}
+
+	div.fixed_wrap > ul.opened > li:last-child {
+		bottom: -10px;
+	}
+
+	div.field,
+	div.phone_group {
+		display: none;
+	}
+
+	nav.opened {
+		width: 100%;
+		height: 100%;
+		top: 60px;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		z-index: 20;
+	}
+
+	nav ul.menu {
+		position: absolute;
+		padding-top: 20px;
+		width: 280px;
+		height: 100%;
+		left: -280px;
+		background-color: rgba(103, 24, 43, 1);
+	}
+
+	nav.opened ul.menu {
+		left: 0;
+		transition : all 0.25s;
+	}
+
+	nav ul.menu > li > a {
+		padding-left: 30px;
+		padding-top: 10px;
+		font: normal 20px/50px "WeblySleekUI-Light", Arial, sans-serif;
+	}
+
+	div.fixed_wrap > form {
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		left: 0;
+		padding: 10px 20px;
+		background-color: rgba(0, 0, 0, 1);
+		border-top: 3px solid rgba(255, 255, 255, 1);
+		transition : all 0.25s;
+		display: none;
+	}
+
+	div.fixed_wrap > form > input {
+		padding: 0 10px;
+		font : normal 16px/40px "WeblySleekUI-Light", Arial, sans-serif;
+		width: calc(100% - 130px);
+	}
+
+	div.fixed_wrap > form > button {
+		width: 120px;
+		height: 40px;
+		font : normal 16px/40px "WeblySleekUI-Light", Arial, sans-serif;
+		color: rgba(0, 0, 0, 1);
+		background-color: rgba(255, 255, 255, 1);
+		border-left: 1px solid rgba(0, 0, 0, 1);
+	}
+
+		div.fixed_wrap > form > button:hover {
+			background-color: rgba(149, 43, 68, 0.2);
+			color: rgba(255, 255, 255, 1);
+			cursor: pointer;
+		}
+
+		a.logo {
+			width: 104px;
+			height: 40px;
+			top: 12px;
+			left: calc(50% - 40px);
+			z-index: 17;
+		}
+
+		a.logo::after {
+			left : 0;
+				z-index: 17;
+			font : normal 10px/10px "WeblySleekUI-Light", Arial, sans-serif;
+	}
+}

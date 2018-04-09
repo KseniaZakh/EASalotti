@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+    	font-family : "WeblySleekUI-Light";
+    	src : url("../fonts/WeblySleekUILight.eot");
+    	src : url("../fonts/WeblySleekUILight.eot?#iefix") format("embedded-opentype"),
+    		url("../fonts/WeblySleekUILight.woff") format("woff"),
+    		url("../fonts/WeblySleekUILight.ttf") format("truetype");
+   		font-style : normal;
+    	font-weight : normal;
+		}
+
+@font-face {
+		 font-family : "WeblySleekUI-SemiBold";
+		 src : url("../fonts/WeblySleekUISemiBold.eot");
+		 src : url("../fonts/WeblySleekUISemiBold.eot?#iefix") format("embedded-opentype"),
+		    	url("../fonts/WeblySleekUISemiBold.woff") format("woff"),
+		    	url("../fonts/WeblySleekUISemiBold.ttf") format("truetype");
+		   	font-style : normal;
+		    font-weight : normal;
+			}
+
+@font-face {
+		font-family : "WeblySleekUI-SemiLight";
+		src : url("../fonts/WeblySleekUISemiLight.eot");
+		src : url("../fonts/WeblySleekUISemiLight.eot?#iefix") format("embedded-opentype"),
+					 url("../fonts/WeblySleekUISemiLight.woff") format("woff"),
+					 url("../fonts/WeblySleekUISemiLight.ttf") format("truetype");
+		font-style : normal;
+		font-weight : normal;
+		}
